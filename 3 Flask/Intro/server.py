@@ -6,6 +6,13 @@ app = Flask(__name__) #crea una nueva instancia de la clase Flask llamada "app"
 def inicio():
     return "¡Hola desde Flask!" #Devolver el texto "¡Hola desde Flask!"
 
+@app.route("/hola/<name>")
+def hola(name):
+    return "Hola "+ name
+
+@app.route("/numero/<int:n>")
+def numero(n):
+    return f"Ingresaste el numero {n}"
 
 #Asegura que este archivo que el se está ejecutando directamente en el módulo
 if __name__ == "__main__":
