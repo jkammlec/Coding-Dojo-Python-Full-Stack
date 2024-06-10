@@ -7,6 +7,23 @@
     <title>Formulario</title>
 </head>
 <body>
-
+    <div class="container">
+        <div class="row">
+            <div class="col-6">
+                <h1>Registrar usuario</h1>
+                <form action="/registrar" method="post">
+                    <div>
+                        <label for="nombre_id">Nombre:</label>
+                        <input type="text" name="nombre" id="nombre_id" class="form-control">
+                    </div>
+                    <div>
+                        <label for="email_id">Email:</label>
+                        <input type="email" name="email" id="email_id" class="form-control">
+                    </div>
+                    <input type="submit" value="Enviar formulario" class="btn btn-success mt-3">
+                </form>
+            </div>
+        </div>
+    </div>
 </body>
 </html>
