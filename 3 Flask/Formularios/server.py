@@ -25,7 +25,7 @@ def registrar():
 
     # Guardar en sesión
     session["usuario"] = request.form["nombre"]
-    session["correo"] = request.form["email"]
+    session["lugar"] = request.form["lugar"]
     return redirect("/exito")
 '''
 request.form = {
